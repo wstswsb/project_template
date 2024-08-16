@@ -30,5 +30,13 @@ pipeline {
                 }
             }
         }
+        stage("dockerhub push) {
+            steps {
+                echo " ============== start pushing image =================="
+                sh '''
+                docker push bobryshevs/jenkins-course:latest
+                '''
+            }
+        }
     }
 }
