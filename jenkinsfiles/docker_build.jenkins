@@ -28,7 +28,7 @@ pipeline {
                 }
             }
         }
-        stage("dockerhub push) {
+        stage("dockerhub push") {
             steps {
                 echo " ============== start pushing image =================="
                 sh '''
